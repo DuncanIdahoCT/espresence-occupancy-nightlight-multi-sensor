@@ -20,3 +20,9 @@ For the ESP MCU I chose to get an M5Stack Atom Lite, be careful you don't end up
 
 Why this particular ESP32...? well I wanted the Adafruit ESP32 Pico which is a tad bit smaller but simply not available. In fact there are very few Pico form-factor full featured ESP32 dev kits out there. But at $7.50, the M5Stack Atom Lite is a bargain, and the case snaps apart super easy!
 
+![M5Stack Atom Lite Case](/static/images/empty%20atom%20case.jpg)
+
+After the Atom Lite is out of its case, I removed the headers and the Stemma JST connector which provides easy access to some nice solder points for wires and 5V power:
+
+![M5Stack Atom Lite Mods](/static/images/remove%20these.jpg)
+

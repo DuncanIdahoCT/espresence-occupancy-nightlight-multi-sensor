@@ -8,7 +8,7 @@ You can see my previous prototype work on a basic version of this with an ESP826
 
 For this improved model I chose to use a full featured ESP32 that has a dual radio capable of simultaneous WiFi connectivity and both BLE and BT (classic) so it can function as an optional BLE Tracker and / or Bluetooth Proxy.
 
-I won't go through all the build notes and hisotry here since that is covered in detail in the above linked repo but I'll cover the details of the parts used and how I modified the Night Light which, sadly, seems to be currently out of stock everywhere, I have a few more on backorder so I can make some of these for others or whatever.
+I won't go through all the build notes and history here since that is covered in detail in the above linked repo but I'll cover the details of the parts used and how I modified the Night Light which, sadly, seems to be currently out of stock everywhere, I have a few more on backorder so I can make some of these for others or whatever.
 
 For the Night Light I chose to use this unit from Link2Home which sells under some other brands too but the Link2Home model is just better and the case comes apart with zero fuss and only a handful of easy to remove screws:
 
@@ -51,7 +51,7 @@ You have several GPIO pins to choose from on the ESP dev kit board, these are th
   ESP G22  ->   mmWave TX
   ESP G25  ->   mmWave IO1
 
-The IO1 is for the binary_sensor and the RX/TX are for programming the settings and controling the LED on the mmWave, you don't need it for basic operation but you'll likely need to change the range settings and you'll very quickly find the blinking red LED on the mmWave to be an annoyance.
+The IO1 is for the binary_sensor and the RX/TX are for programming the settings and controlling the LED on the mmWave, you don't need it for basic operation but you'll likely need to change the range settings and you'll very quickly find the blinking red LED on the mmWave to be an annoyance.
 
 The PIR connection is super simple, power, which you can get from the 5V source or in my case I used the 3V from the ESP because I was looking for an easy solder spot that wasn't already used... and one GPIO:
 
@@ -61,11 +61,11 @@ Connections overview:
 
 ![M5Stack Atom Lite Mods](/static/images/project%20overview.jpg)
 
-Mounting the PIR is fairly easy, drill a hole in a location off to the side and if you prefer, as I did, at an angle alined with the curve of the plastic night light diffuser:
+Mounting the PIR is fairly easy, drill a hole in a location off to the side and if you prefer, as I did, at an angle aligned with the curve of the plastic night light diffuser:
 
 ![M5Stack Atom Lite Mods](/static/images/PIR%20drilled%20and%20installed.jpg)
 
-The nice thing about the low profile model of the Panasonic PIR is that it has a thicker ring at the base, so a smaller hole is required and the base prevents it from falling out, provides easy of glueing and also hides the imperfections of the drilling especially if you ensure you get the white model <- hint!!!
+The nice thing about the low profile model of the Panasonic PIR is that it has a thicker ring at the base, so a smaller hole is required and the base prevents it from falling out, provides easy of gluing and also hides the imperfections of the drilling especially if you ensure you get the white model <- hint!!!
 
 ### Installation:
  * Download these files and copy them (keeping their subfolder paths) into your Home Assistant config/esphome main folder:

@@ -32,9 +32,13 @@ The mmWave Sensor I use is pretty common and popular but there are other options
 
   https://www.dfrobot.com/product-2282.html
 
+![M5Stack Atom Lite Mods](/static/images/connecting%20radar%20to%20mcu.jpg)
+
 And for the PIR, there are analog and digital options but to make the input pulldown work seamlessly I chose the highly recommended Panasonic line and specifically the low profile EKM line:
 
   https://industrial.panasonic.com/sa/products/pt/papirs/models/EKMC1607111
 
 ![M5Stack Atom Lite Mods](/static/images/PIR%20sensor.jpg)
+
+
 

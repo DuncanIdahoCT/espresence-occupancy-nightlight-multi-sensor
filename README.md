@@ -57,7 +57,7 @@ The PIR connection is super simple, power, which you can get from the 5V source 
 
   ESP G33  ->   PIR signal (middle pin)
 
-You have several GPIO pins to choose from on the ESP dev kit board, these are the connections I made:
+Connections overview:
 
 ![M5Stack Atom Lite Mods](/static/images/project%20overview.jpg)
 

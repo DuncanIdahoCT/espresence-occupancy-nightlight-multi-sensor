@@ -27,6 +27,7 @@ Why this particular ESP32...? well I wanted the Adafruit ESP32 Pico which is a t
 After the Atom Lite is out of its case, I removed the headers and the Stemma JST connector which provides easy access to some nice solder points for wires and 5V power:
 
 ![M5Stack Atom Lite Mods](/static/images/remove%20these.jpg)
+![M5Stack Atom Lite Mods](/static/images/back%20of%20esp32%20mcu.jpg)
 
 The mmWave Sensor I use is pretty common and popular but there are other options out there, this is the one I prefer:
 

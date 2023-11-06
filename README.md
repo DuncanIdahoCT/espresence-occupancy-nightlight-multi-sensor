@@ -29,6 +29,8 @@ After the Atom Lite is out of its case, I removed the headers and the Stemma JST
 ![M5Stack Atom Lite Mods](/static/images/remove%20these.jpg)
 ![M5Stack Atom Lite Mods](/static/images/back%20of%20esp32%20mcu.jpg)
 
+Note: Removing the Stemma (JST) connector might seem difficult but you can actually just lift it slowly from the white plastic body, and the way it's surface soldered onto the pads, allows for it to simply be peeled off as it were.
+
 The mmWave Sensor I use is pretty common and popular but there are other options out there, this is the one I prefer:
 
   https://www.dfrobot.com/product-2282.html

@@ -10,7 +10,7 @@ For this improved model I chose to use a full featured ESP32 that has a dual rad
 
 I won't go through all the build notes and hisotry here since that is covered in detail in the above linked repo but I'll cover the details of the parts used and how I modified the Night Light which, sadly, seems to be currently out of stock everywhere, I have a few more on backorder so I can make some of these for others or whatever.
 
-For the Night Light I chose to use this unit from Link2Home which sells under some other brands too but the Link2Home model is just better:
+For the Night Light I chose to use this unit from Link2Home which sells under some other brands too but the Link2Home model is just better and the case comes apart with zero fuss and only a handful of easy to remove screws:
 
   https://www.amazon.com/Link2Home-EM-PL62W-Photocell-Change-Charger/dp/B07BFFGXJ9
 
@@ -43,5 +43,21 @@ And for the PIR, there are analog and digital options but to make the input pull
 
 ![M5Stack Atom Lite Mods](/static/images/PIR%20sensor.jpg)
 
+You have several GPIO pins to choose from on the ESP dev kit board, these are the connections I made:
 
+  ESP G    ->   mmWave G
+  ESP 5V   ->   mmWave V
+  ESP G21  ->   mmWave RX
+  ESP G22  ->   mmWave TX
+  ESP G25  ->   mmWave IO1
+
+The IO1 is for the binary_sensor and the RX/TX are for programming the settings and controling the LED on the mmWave, you don't need it for basic operation but you'll likely need to change the range settings and you'll very quickly find the blinking red LED on the mmWave to be an annoyance.
+
+The PIR connection is super simple, power, which you can get from the 5V source or in my case I used the 3V from the ESP because I was looking for an easy solder spot that wasn't already used... and one GPIO:
+
+  ESP G33  ->   PIR signal (middle pin)
+
+You have several GPIO pins to choose from on the ESP dev kit board, these are the connections I made:
+
+![M5Stack Atom Lite Mods](/static/images/project%20overview.jpg)
 
